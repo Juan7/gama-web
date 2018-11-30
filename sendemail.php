@@ -2,7 +2,7 @@
 # request sent using HTTP_X_REQUESTED_WITH
 if( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) AND ($_POST['url']=='')){
 	if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message'])) {
-		$to = 'juan.gomez.q@gmail.com';  // Change it by your email address
+		$to = 'gerencia@servicios-gama.com';  // Change it by your email address
     $subject='Contact from Identity';
 		$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 		$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
